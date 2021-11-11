@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Portal from './pages/Portal';
+import MainNav from './components/layout/MainNav';
+import MainNavItem from './components/layout/MainNavItem';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MainNav>
+        <MainNavItem to="/portal">Portal</MainNavItem>
+      </MainNav>
+      <Routes>
+        <Route path="/portal" element={<Portal />} />
+        <Route path="*" element={<Portal />} />
+      </Routes>
     </div>
   );
 }
