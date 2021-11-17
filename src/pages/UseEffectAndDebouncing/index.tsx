@@ -2,7 +2,14 @@ import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import CircularIndeterminate from '../../components/progresses/CircularIndeterminate';
 
-const Debouncing = () => {
+/**
+ * useEffect에 들어가는 함수는 side effect와 관련된다.
+ * react는 화면을 그리는 라이브러리이고
+ * 화면을 그리는 데에 직접적인 영향을 주지 않는 로직은 side effect, 곧 useEffect에 넣는다.
+ * 예를 들어 api 요청은 데이터를 side effect로 받아오는 것이지 화면을 그리는 것이 아니다.
+ */
+
+const UseEffectAndDebouncing = () => {
   const [value, setValue] = useState('');
   const [result, setResult] = useState('');
 
@@ -48,4 +55,4 @@ const TextInput = styled.input`
 
 const Result = styled.div``;
 
-export default Debouncing;
+export default UseEffectAndDebouncing;
