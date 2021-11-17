@@ -7,6 +7,9 @@ import CircularIndeterminate from '../../components/progresses/CircularIndetermi
  * react는 화면을 그리는 라이브러리이고
  * 화면을 그리는 데에 직접적인 영향을 주지 않는 로직은 side effect, 곧 useEffect에 넣는다.
  * 예를 들어 api 요청은 데이터를 side effect로 받아오는 것이지 화면을 그리는 것이 아니다.
+ *
+ * 아래는 useEffect를 이용한 debouncing 예제다.
+ * 사용자가 입력하는 동안에는 api 요청을 하지 않는다.
  */
 
 const UseEffectAndDebouncing = () => {
