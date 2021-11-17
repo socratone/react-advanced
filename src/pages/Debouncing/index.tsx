@@ -9,7 +9,7 @@ const Debouncing = () => {
   useEffect(() => {
     if (value) {
       const timer = setTimeout(() => {
-        console.log('mock api 요청');
+        console.log('api 요청');
         setResult(`검색 결과 : ${value}`);
       }, 500);
       return () => {
