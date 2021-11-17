@@ -13,6 +13,7 @@ const Debouncing = () => {
         setResult(`검색 결과 : ${value}`);
       }, 500);
       return () => {
+        // 다음 useEffect의 함수가 실행되기 직전에 실행, 또는 unmount시
         console.log('clear timeout');
         clearTimeout(timer);
       };
