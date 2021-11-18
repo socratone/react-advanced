@@ -2,6 +2,11 @@ import { TextField } from '@mui/material';
 import React, { useReducer } from 'react';
 import styled from 'styled-components';
 
+/**
+ * useReducer를 이용하면 정의된 한 번의 action으로 여러 상태를 바꿀 수 있다.
+ * 컴포넌트 내부의 로직이 간단해진다.
+ */
+
 type NameState = {
   value: string;
   error: string;
@@ -31,6 +36,7 @@ const UseReducer = () => {
   const [nameState, dispatchName] = useReducer<NameReducer>(
     nameReducer,
     initialState
+    // 세번째 파라미터는 생략 가능한 initializer
   );
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
