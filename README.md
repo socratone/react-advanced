@@ -19,3 +19,7 @@ react는 화면을 그리는 라이브러리이고\
 
 아래는 useEffect를 이용한 debouncing 예제다.\
 사용자가 입력하는 동안에는 api 요청을 하지 않는다.
+
+## Style Components
+
+스타일 컴포넌트를 이용해서 state에 따라 css class를 넣고 빼는 방법
