@@ -4,6 +4,7 @@ import MainNav from './components/layout/MainNav';
 import MainNavItem from './components/layout/MainNavItem';
 import UseEffectAndDebouncing from './pages/UseEffectAndDebouncing';
 import StyledComponents from './pages/StyledComponents';
+import UseReducer from './pages/UseReducer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           UseEffectAndDebouncing
         </MainNavItem>
         <MainNavItem to="/styled-components">StyledComponents</MainNavItem>
+        <MainNavItem to="/use-reducer">UseReducer</MainNavItem>
       </MainNav>
       <Routes>
         <Route path="/portal" element={<Portal />} />
@@ -22,6 +24,7 @@ function App() {
           element={<UseEffectAndDebouncing />}
         />
         <Route path="/styled-components" element={<StyledComponents />} />
+        <Route path="/use-reducer" element={<UseReducer />} />
         <Route path="*" element={<Portal />} />
       </Routes>
     </div>
