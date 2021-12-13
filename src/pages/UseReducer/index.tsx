@@ -5,6 +5,7 @@ import styled from 'styled-components';
 /**
  * useReducer를 이용하면 정의된 한 번의 action으로 여러 상태를 바꿀 수 있다.
  * 컴포넌트 내부의 로직이 간단해진다.
+ * state가 서로 연관돼 있거나 너무 복잡해지면 사용해보자.
  */
 
 type NameState = {
