@@ -41,6 +41,7 @@ const UseReducer = () => {
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
+    // state와 마찬가지로 여러번 호출하더라도 한 번만 dispatch됨
     dispatchName({
       type: 'INPUT',
       value,
