@@ -6,6 +6,7 @@ import UseEffectAndDebouncing from './pages/UseEffectAndDebouncing';
 import StyledComponents from './pages/StyledComponents';
 import UseReducer from './pages/UseReducer';
 import UseContext from './pages/UseContext';
+import UseImperativeHandle from './pages/UseImperativeHandle';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         <MainNavItem to="/styled-components">StyledComponents</MainNavItem>
         <MainNavItem to="/use-reducer">UseReducer</MainNavItem>
         <MainNavItem to="/use-context">UseContext</MainNavItem>
+        <MainNavItem to="/use-imperative-handle">
+          UseImperativeHandle
+        </MainNavItem>
       </MainNav>
       <Routes>
         <Route path="/portal" element={<Portal />} />
@@ -28,6 +32,10 @@ function App() {
         <Route path="/styled-components" element={<StyledComponents />} />
         <Route path="/use-reducer" element={<UseReducer />} />
         <Route path="/use-context" element={<UseContext />} />
+        <Route
+          path="/use-imperative-handle"
+          element={<UseImperativeHandle />}
+        />
         <Route path="*" element={<Portal />} />
       </Routes>
     </div>
