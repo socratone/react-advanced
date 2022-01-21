@@ -23,6 +23,7 @@ const Portal = () => {
       <Container>
         <Button onClick={handleClick}>모달 열기</Button>
       </Container>
+      {/* AlertModal 안쪽에 createPortal 로직을 넣으면 깔끔해진다. */}
       {ReactDOM.createPortal(
         <AlertModal open={open} onClose={handleClose} />,
         document.getElementById('modal-root') as HTMLElement
