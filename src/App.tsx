@@ -8,6 +8,7 @@ import UseReducer from './pages/UseReducer';
 import UseContext from './pages/UseContext';
 import UseImperativeHandle from './pages/UseImperativeHandle';
 import ReactTransitionGroup from './pages/ReactTransitionGroup';
+import ReactTransitionGroupCSSTransition from './pages/ReactTransitionGroupCSSTransition';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
         <MainNavItem to="/react-transition-group">
           ReactTransitionGroup
         </MainNavItem>
+        <MainNavItem to="/react-transition-group-css-transition">
+          ReactTransitionGroupCSSTransition
+        </MainNavItem>
       </MainNav>
       <Routes>
         <Route path="/portal" element={<Portal />} />
@@ -43,6 +47,10 @@ function App() {
         <Route
           path="/react-transition-group"
           element={<ReactTransitionGroup />}
+        />
+        <Route
+          path="/react-transition-group-css-transition"
+          element={<ReactTransitionGroupCSSTransition />}
         />
         <Route path="*" element={<Portal />} />
       </Routes>
