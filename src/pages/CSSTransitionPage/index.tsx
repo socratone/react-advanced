@@ -5,7 +5,7 @@ import { CSSTransition } from 'react-transition-group';
 /**
  * classNames를 사용하면 애니메이션의 진행 흐름 각각에 css class를 넣을 수 있다.
  */
-const ReactTransitionGroupCSSTransition = () => {
+const CSSTransitionPage = () => {
   const [show, setShow] = useState(false);
 
   const handleClick = () => {
@@ -78,4 +78,4 @@ const Circle = styled.div`
   }
 `;
 
-export default ReactTransitionGroupCSSTransition;
+export default CSSTransitionPage;

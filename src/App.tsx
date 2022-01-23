@@ -7,8 +7,8 @@ import StyledComponents from './pages/StyledComponents';
 import UseReducer from './pages/UseReducer';
 import UseContext from './pages/UseContext';
 import UseImperativeHandle from './pages/UseImperativeHandle';
-import ReactTransitionGroup from './pages/ReactTransitionGroup';
-import ReactTransitionGroupCSSTransition from './pages/ReactTransitionGroupCSSTransition';
+import TransitionPage from './pages/TransitionPage';
+import CSSTransitionPage from './pages/CSSTransitionPage';
 
 function App() {
   return (
@@ -24,12 +24,8 @@ function App() {
         <MainNavItem to="/use-imperative-handle">
           UseImperativeHandle
         </MainNavItem>
-        <MainNavItem to="/react-transition-group">
-          ReactTransitionGroup
-        </MainNavItem>
-        <MainNavItem to="/react-transition-group-css-transition">
-          ReactTransitionGroupCSSTransition
-        </MainNavItem>
+        <MainNavItem to="/transition">Transition</MainNavItem>
+        <MainNavItem to="/css-transition">CSSTransition</MainNavItem>
       </MainNav>
       <Routes>
         <Route path="/portal" element={<Portal />} />
@@ -44,14 +40,8 @@ function App() {
           path="/use-imperative-handle"
           element={<UseImperativeHandle />}
         />
-        <Route
-          path="/react-transition-group"
-          element={<ReactTransitionGroup />}
-        />
-        <Route
-          path="/react-transition-group-css-transition"
-          element={<ReactTransitionGroupCSSTransition />}
-        />
+        <Route path="/transition" element={<TransitionPage />} />
+        <Route path="/css-transition" element={<CSSTransitionPage />} />
         <Route path="*" element={<Portal />} />
       </Routes>
     </div>

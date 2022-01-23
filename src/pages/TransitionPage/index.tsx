@@ -12,7 +12,7 @@ import { Transition } from 'react-transition-group';
  * in이 false로 바뀌면 state가 exiting이 되는데 이 때에 opacity 애니메이션을 timeout만큼 주면
  * timeout이 끝난 다음 사라지기 때문에 자연스러운 애니메이션을 만들 수 있다.
  */
-const ReactTransitionGroup = () => {
+const TransitionPage = () => {
   const [show, setShow] = useState(false);
 
   const handleClick = () => {
@@ -75,4 +75,4 @@ const Circle = styled.div`
   }
 `;
 
-export default ReactTransitionGroup;
+export default TransitionPage;
