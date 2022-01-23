@@ -9,6 +9,7 @@ import UseContext from './pages/UseContext';
 import UseImperativeHandle from './pages/UseImperativeHandle';
 import TransitionPage from './pages/TransitionPage';
 import CSSTransitionPage from './pages/CSSTransitionPage';
+import TransitionGroupPage from './pages/TransitionGroupPage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         </MainNavItem>
         <MainNavItem to="/transition">Transition</MainNavItem>
         <MainNavItem to="/css-transition">CSSTransition</MainNavItem>
+        <MainNavItem to="/transition-group">TransitionGroupPage</MainNavItem>
       </MainNav>
       <Routes>
         <Route path="/portal" element={<Portal />} />
@@ -42,6 +44,7 @@ function App() {
         />
         <Route path="/transition" element={<TransitionPage />} />
         <Route path="/css-transition" element={<CSSTransitionPage />} />
+        <Route path="/transition-group" element={<TransitionGroupPage />} />
         <Route path="*" element={<Portal />} />
       </Routes>
     </div>
