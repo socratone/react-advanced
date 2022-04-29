@@ -38,3 +38,7 @@ react는 화면을 그리는 라이브러리이고\
 
 useReducer를 이용하면 정의된 한 번의 action으로 여러 상태를 바꿀 수 있다.\
 컴포넌트 내부의 로직이 간단해진다.
+
+## SearchParams
+
+URL의 query string을 state로 다루는 방법

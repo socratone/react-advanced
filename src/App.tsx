@@ -10,6 +10,7 @@ import UseImperativeHandle from './pages/UseImperativeHandle';
 import TransitionPage from './pages/TransitionPage';
 import CSSTransitionPage from './pages/CSSTransitionPage';
 import TransitionGroupPage from './pages/TransitionGroupPage';
+import SearchParamsPage from './pages/SearchParamsPage';
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
         </MainNavItem>
         <MainNavItem to="/transition">Transition</MainNavItem>
         <MainNavItem to="/css-transition">CSSTransition</MainNavItem>
-        <MainNavItem to="/transition-group">TransitionGroupPage</MainNavItem>
+        <MainNavItem to="/transition-group">TransitionGroup</MainNavItem>
+        <MainNavItem to="/search-params">SearchParams</MainNavItem>
       </MainNav>
       <Routes>
         <Route path="/portal" element={<Portal />} />
@@ -45,6 +47,7 @@ function App() {
         <Route path="/transition" element={<TransitionPage />} />
         <Route path="/css-transition" element={<CSSTransitionPage />} />
         <Route path="/transition-group" element={<TransitionGroupPage />} />
+        <Route path="/search-params" element={<SearchParamsPage />} />
         <Route path="*" element={<Portal />} />
       </Routes>
     </div>

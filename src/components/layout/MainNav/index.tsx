@@ -24,6 +24,7 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   padding: 0 20px;
+  overflow-x: auto;
 
   & > * {
     margin-right: 10px;
