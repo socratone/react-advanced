@@ -18,7 +18,6 @@ const Container = styled.header`
 `;
 
 const Nav = styled.nav`
-  max-width: 1000px;
   margin: 0 auto;
   height: 100%;
   display: flex;
