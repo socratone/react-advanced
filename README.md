@@ -42,3 +42,12 @@ useReducer를 이용하면 정의된 한 번의 action으로 여러 상태를 �
 ## SearchParams
 
 URL의 query string을 state로 다루는 방법
+
+## Subcomponents
+
+서브 컴포넌트를 사용하면 props 수를 줄여 깔끔하게 할 수 있다.
+
+## React.Children
+
+React.Children을 이용해서 Option(child)에 prop을 넣지 않아도\
+Options(parent)에서 prop을 넣을 수 있다.
