@@ -4,7 +4,7 @@ import ColorContext from '../../store/color-context';
 import Palette from './Palette';
 import Picker from './Picker';
 
-const UseContext = () => {
+const UseContextPage = () => {
   const [color, setColor] = useState('dodgerblue');
 
   const handleChangeColor = (color: string) => {
@@ -38,4 +38,4 @@ const Container = styled.div`
   }
 `;
 
-export default UseContext;
+export default UseContextPage;

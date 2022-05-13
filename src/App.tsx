@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
-import Portal from './pages/Portal';
+import PortalPage from './pages/PortalPage';
 import MainNav from './components/layout/MainNav';
 import MainNavItem from './components/layout/MainNavItem';
-import UseEffectAndDebouncing from './pages/UseEffectAndDebouncing';
-import StyledComponents from './pages/StyledComponents';
-import UseReducer from './pages/UseReducer';
-import UseContext from './pages/UseContext';
-import UseImperativeHandle from './pages/UseImperativeHandle';
+import UseEffectAndDebouncingPage from './pages/UseEffectAndDebouncingPage';
+import StyledComponentsPage from './pages/StyledComponentsPage';
+import UseReducerPage from './pages/UseReducerPage';
+import UseContextPage from './pages/UseContextPage';
+import UseImperativeHandlePage from './pages/UseImperativeHandlePage';
 import TransitionPage from './pages/TransitionPage';
 import CSSTransitionPage from './pages/CSSTransitionPage';
 import TransitionGroupPage from './pages/TransitionGroupPage';
@@ -32,23 +32,23 @@ function App() {
         <MainNavItem to="/search-params">SearchParams</MainNavItem>
       </MainNav>
       <Routes>
-        <Route path="/portal" element={<Portal />} />
+        <Route path="/portal" element={<PortalPage />} />
         <Route
           path="/use-effect-and-debouncing"
-          element={<UseEffectAndDebouncing />}
+          element={<UseEffectAndDebouncingPage />}
         />
-        <Route path="/styled-components" element={<StyledComponents />} />
-        <Route path="/use-reducer" element={<UseReducer />} />
-        <Route path="/use-context" element={<UseContext />} />
+        <Route path="/styled-components" element={<StyledComponentsPage />} />
+        <Route path="/use-reducer" element={<UseReducerPage />} />
+        <Route path="/use-context" element={<UseContextPage />} />
         <Route
           path="/use-imperative-handle"
-          element={<UseImperativeHandle />}
+          element={<UseImperativeHandlePage />}
         />
         <Route path="/transition" element={<TransitionPage />} />
         <Route path="/css-transition" element={<CSSTransitionPage />} />
         <Route path="/transition-group" element={<TransitionGroupPage />} />
         <Route path="/search-params" element={<SearchParamsPage />} />
-        <Route path="*" element={<Portal />} />
+        <Route path="*" element={<PortalPage />} />
       </Routes>
     </div>
   );

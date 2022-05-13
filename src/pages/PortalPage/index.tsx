@@ -11,7 +11,7 @@ import AlertModal from '../../components/modals/AlertModal';
  * 이렇게 하면 root 바로 밑에 위치하기 때문에 리렌더링시 연산을 줄일 수 있다.
  */
 
-const Portal = () => {
+const PortalPage = () => {
   const [open, setOpen] = useState(false);
 
   const handleClick = () => setOpen(true);
@@ -46,4 +46,4 @@ const Button = styled.button`
   font-weight: 700;
 `;
 
-export default Portal;
+export default PortalPage;

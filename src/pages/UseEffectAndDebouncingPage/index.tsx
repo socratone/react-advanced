@@ -12,7 +12,7 @@ import CircularIndeterminate from '../../components/progresses/CircularIndetermi
  * 사용자가 입력하는 동안에는 api 요청을 하지 않는다.
  */
 
-const UseEffectAndDebouncing = () => {
+const UseEffectAndDebouncingPage = () => {
   const [value, setValue] = useState('');
   const [result, setResult] = useState('');
 
@@ -58,4 +58,4 @@ const TextInput = styled.input`
 
 const Result = styled.div``;
 
-export default UseEffectAndDebouncing;
+export default UseEffectAndDebouncingPage;

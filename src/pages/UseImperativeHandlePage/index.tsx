@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import Input, { InputRef } from './Input';
 
-const UseImperativeHandle = () => {
+const UseImperativeHandlePage = () => {
   const inputRef = useRef<InputRef>(null);
   const [value, setValue] = useState('');
 
@@ -21,4 +21,4 @@ const UseImperativeHandle = () => {
   );
 };
 
-export default UseImperativeHandle;
+export default UseImperativeHandlePage;

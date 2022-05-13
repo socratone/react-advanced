@@ -33,7 +33,7 @@ const nameReducer: NameReducer = (state, action) => {
 
 const initialState = { value: '', error: '' };
 
-const UseReducer = () => {
+const UseReducerPage = () => {
   const [nameState, dispatchName] = useReducer<NameReducer>(
     nameReducer,
     initialState
@@ -67,4 +67,4 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-export default UseReducer;
+export default UseReducerPage;

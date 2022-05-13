@@ -5,7 +5,7 @@ import styled from 'styled-components';
  * 스타일 컴포넌트를 이용해서 state에 따라 css class를 넣고 빼는 방법
  */
 
-const StyledComponents = () => {
+const StyledComponentsPage = () => {
   const [pressed, setPressed] = useState(false);
 
   const handleClick = () => setPressed((pressed) => !pressed);
@@ -41,4 +41,4 @@ const Button = styled.button`
   }
 `;
 
-export default StyledComponents;
+export default StyledComponentsPage;
