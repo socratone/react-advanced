@@ -11,6 +11,7 @@ import TransitionPage from './pages/TransitionPage';
 import CSSTransitionPage from './pages/CSSTransitionPage';
 import TransitionGroupPage from './pages/TransitionGroupPage';
 import SearchParamsPage from './pages/SearchParamsPage';
+import SubcomponentsPage from './pages/SubcomponentsPage';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <MainNavItem to="/css-transition">CSSTransition</MainNavItem>
         <MainNavItem to="/transition-group">TransitionGroup</MainNavItem>
         <MainNavItem to="/search-params">SearchParams</MainNavItem>
+        <MainNavItem to="/subcomponents">Subcomponents</MainNavItem>
       </MainNav>
       <Routes>
         <Route path="/portal" element={<PortalPage />} />
@@ -48,6 +50,7 @@ function App() {
         <Route path="/css-transition" element={<CSSTransitionPage />} />
         <Route path="/transition-group" element={<TransitionGroupPage />} />
         <Route path="/search-params" element={<SearchParamsPage />} />
+        <Route path="/subcomponents" element={<SubcomponentsPage />} />
         <Route path="*" element={<PortalPage />} />
       </Routes>
     </div>
