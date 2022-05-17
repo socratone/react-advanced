@@ -13,8 +13,9 @@ const MainNav = ({ children }: MainNavProps) => {
 };
 
 const Container = styled.header`
-  height: 50px;
   border-bottom: 1px solid gainsboro;
+  display: flex;
+  align-items: center;
 `;
 
 const Nav = styled.nav`
@@ -22,8 +23,8 @@ const Nav = styled.nav`
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0 20px;
-  overflow-x: auto;
+  padding: 5px 20px;
+  flex-wrap: wrap;
 
   & > * {
     margin-right: 10px;

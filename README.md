@@ -51,3 +51,9 @@ URL의 query string을 state로 다루는 방법
 
 React.Children을 이용해서 Option(child)에 prop을 넣지 않아도\
 Options(parent)에서 prop을 넣을 수 있다.
+
+## Functional Programming
+
+함수형 프로그래밍을 생각하면서 리액트 코드를 작업하면\
+보다 유지보수하기 쉬운 형태로 만들 수 있다.\
+함수형 프로그래밍은 크게 액션, 계산, 데이터로 구분할 수 있다.
