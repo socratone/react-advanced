@@ -16,7 +16,7 @@ index.html에 modal-root 엘리먼트를 따로 두었고\
 createPortal을 여러번 호출하더라도 덮어 씌우지는 않는다.\
 이렇게 하면 root 바로 밑에 위치하기 때문에 리렌더링시 연산을 줄일 수 있다.
 
-## Style Components
+## Styled Components
 
 스타일 컴포넌트를 이용해서 state에 따라 css class를 넣고 빼는 방법
 
