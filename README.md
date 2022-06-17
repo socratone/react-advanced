@@ -61,3 +61,8 @@ Options(parent)에서 prop을 넣을 수 있다.
 ## Scroll Animation
 
 framer motion을 이용해서 scroll 이벤트에 반응하는 애니메이션을 적용하는 방법
+
+## Force Remount
+
+key를 바꾸면 컴포넌트를 강제로 언마운트 후 다시 마운트 시킬 수 있다.\
+useEffect 안의 interval timer를 복잡하게 초기화할 필요없이 간단하게 처리한다.

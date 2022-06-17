@@ -1,20 +1,21 @@
-import { Routes, Route } from "react-router-dom";
-import PortalPage from "./pages/PortalPage";
-import MainNav from "./components/layout/MainNav";
-import MainNavItem from "./components/layout/MainNavItem";
-import UseEffectAndDebouncingPage from "./pages/UseEffectAndDebouncingPage";
-import StyledComponentsPage from "./pages/StyledComponentsPage";
-import UseReducerPage from "./pages/UseReducerPage";
-import UseContextPage from "./pages/UseContextPage";
-import UseImperativeHandlePage from "./pages/UseImperativeHandlePage";
-import TransitionPage from "./pages/TransitionPage";
-import CSSTransitionPage from "./pages/CSSTransitionPage";
-import TransitionGroupPage from "./pages/TransitionGroupPage";
-import SearchParamsPage from "./pages/SearchParamsPage";
-import SubcomponentsPage from "./pages/SubcomponentsPage";
-import ReactChildrenPage from "./pages/ReactChildrenPage";
-import FunctionalProgrammingPage from "./pages/FunctionalProgrammingPage";
-import ScrollAnimationPage from "./pages/ScrollAnimation";
+import { Routes, Route } from 'react-router-dom';
+import PortalPage from './pages/PortalPage';
+import MainNav from './components/layout/MainNav';
+import MainNavItem from './components/layout/MainNavItem';
+import UseEffectAndDebouncingPage from './pages/UseEffectAndDebouncingPage';
+import StyledComponentsPage from './pages/StyledComponentsPage';
+import UseReducerPage from './pages/UseReducerPage';
+import UseContextPage from './pages/UseContextPage';
+import UseImperativeHandlePage from './pages/UseImperativeHandlePage';
+import TransitionPage from './pages/TransitionPage';
+import CSSTransitionPage from './pages/CSSTransitionPage';
+import TransitionGroupPage from './pages/TransitionGroupPage';
+import SearchParamsPage from './pages/SearchParamsPage';
+import SubcomponentsPage from './pages/SubcomponentsPage';
+import ReactChildrenPage from './pages/ReactChildrenPage';
+import FunctionalProgrammingPage from './pages/FunctionalProgrammingPage';
+import ScrollAnimationPage from './pages/ScrollAnimation';
+import ForceRemountPage from './pages/ForceRemountPage';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           FunctionalProgramming
         </MainNavItem>
         <MainNavItem to="/scroll-animation">ScrollAnimation</MainNavItem>
+        <MainNavItem to="/force-remount">ForceRemount</MainNavItem>
       </MainNav>
       <Routes>
         <Route path="/portal" element={<PortalPage />} />
@@ -65,6 +67,7 @@ function App() {
           element={<FunctionalProgrammingPage />}
         />
         <Route path="/scroll-animation" element={<ScrollAnimationPage />} />
+        <Route path="/force-remount" element={<ForceRemountPage />} />
         <Route path="*" element={<PortalPage />} />
       </Routes>
     </div>
