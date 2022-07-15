@@ -16,6 +16,7 @@ import ReactChildrenPage from './pages/ReactChildrenPage';
 import FunctionalProgrammingPage from './pages/FunctionalProgrammingPage';
 import ScrollAnimationPage from './pages/ScrollAnimation';
 import ForceRemountPage from './pages/ForceRemountPage';
+import MobileViewportResizePage from './pages/MobileViewportResizePage';
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
         </MainNavItem>
         <MainNavItem to="/scroll-animation">ScrollAnimation</MainNavItem>
         <MainNavItem to="/force-remount">ForceRemount</MainNavItem>
+        <MainNavItem to="/mobile-viewport-resize">
+          MobileViewportResize
+        </MainNavItem>
       </MainNav>
       <Routes>
         <Route path="/portal" element={<PortalPage />} />
@@ -68,6 +72,10 @@ function App() {
         />
         <Route path="/scroll-animation" element={<ScrollAnimationPage />} />
         <Route path="/force-remount" element={<ForceRemountPage />} />
+        <Route
+          path="/mobile-viewport-resize"
+          element={<MobileViewportResizePage />}
+        />
         <Route path="*" element={<PortalPage />} />
       </Routes>
     </div>
