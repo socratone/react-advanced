@@ -23,6 +23,11 @@ const SwiperPage = () => {
     nextEl: null,
   });
 
+  /**
+   * swiper의 navigation.prevEl과 nextEl에 들어가는 초기 값은 null이고
+   * 그럴 경우 custom navigation 버튼이 동작하지 않는 이슈가 있다.
+   * 따라서 이 부분을 state로 바꿔주고 rendering이 끝나는 시점에 state 업데이트를 하게 했다.
+   */
   useEffect(() => {
     setNavigation({
       prevEl: prevRef.current,
