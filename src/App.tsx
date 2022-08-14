@@ -18,6 +18,7 @@ import ScrollAnimationPage from './pages/ScrollAnimation';
 import ForceRemountPage from './pages/ForceRemountPage';
 import MobileViewportResizePage from './pages/MobileViewportResizePage';
 import SwiperPage from './pages/SwiperPage';
+import UseEffectDependencyPage from './pages/UseEffectDependency';
 
 function App() {
   return (
@@ -48,6 +49,9 @@ function App() {
           MobileViewportResize
         </MainNavItem>
         <MainNavItem to="/swiper">Swiper</MainNavItem>
+        <MainNavItem to="/use-effect-dependency">
+          UseEffectDependency
+        </MainNavItem>
       </MainNav>
       <Routes>
         <Route path="/portal" element={<PortalPage />} />
@@ -79,6 +83,10 @@ function App() {
           element={<MobileViewportResizePage />}
         />
         <Route path="/swiper" element={<SwiperPage />} />
+        <Route
+          path="/use-effect-dependency"
+          element={<UseEffectDependencyPage />}
+        />
         <Route path="*" element={<PortalPage />} />
       </Routes>
     </div>
