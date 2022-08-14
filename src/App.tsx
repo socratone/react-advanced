@@ -17,6 +17,7 @@ import FunctionalProgrammingPage from './pages/FunctionalProgrammingPage';
 import ScrollAnimationPage from './pages/ScrollAnimation';
 import ForceRemountPage from './pages/ForceRemountPage';
 import MobileViewportResizePage from './pages/MobileViewportResizePage';
+import SwiperPage from './pages/SwiperPage';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         <MainNavItem to="/mobile-viewport-resize">
           MobileViewportResize
         </MainNavItem>
+        <MainNavItem to="/swiper">Swiper</MainNavItem>
       </MainNav>
       <Routes>
         <Route path="/portal" element={<PortalPage />} />
@@ -76,6 +78,7 @@ function App() {
           path="/mobile-viewport-resize"
           element={<MobileViewportResizePage />}
         />
+        <Route path="/swiper" element={<SwiperPage />} />
         <Route path="*" element={<PortalPage />} />
       </Routes>
     </div>
