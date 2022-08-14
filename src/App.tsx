@@ -19,7 +19,7 @@ import ForceRemountPage from './pages/ForceRemountPage';
 import MobileViewportResizePage from './pages/MobileViewportResizePage';
 import SwiperPage from './pages/SwiperPage';
 import UseEffectDependencyPage from './pages/UseEffectDependencyPage';
-import UseMemoDependencyPage from './pages/UseMemoDependency';
+import ReactMemoPropPage from './pages/ReactMemoPropPage';
 
 function App() {
   return (
@@ -51,9 +51,9 @@ function App() {
         </MainNavItem>
         <MainNavItem to="/swiper">Swiper</MainNavItem>
         <MainNavItem to="/use-effect-dependency">
-          UseEffectDependency
+          UseEffectDependencys
         </MainNavItem>
-        <MainNavItem to="/use-memo-dependency">UseMemoDependency</MainNavItem>
+        <MainNavItem to="/react-memo-prop">ReactMemoProp</MainNavItem>
       </MainNav>
       <Routes>
         <Route path="/portal" element={<PortalPage />} />
@@ -89,10 +89,7 @@ function App() {
           path="/use-effect-dependency"
           element={<UseEffectDependencyPage />}
         />
-        <Route
-          path="/use-memo-dependency"
-          element={<UseMemoDependencyPage />}
-        />
+        <Route path="/react-memo-prop" element={<ReactMemoPropPage />} />
         <Route path="*" element={<PortalPage />} />
       </Routes>
     </div>

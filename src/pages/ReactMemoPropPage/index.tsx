@@ -2,7 +2,11 @@ import { useMemo, useState } from 'react';
 import styled from 'styled-components';
 import ReactMemoComponent from './ReactMemoComponent';
 
-const UseMemoDependencyPage = () => {
+/**
+ * React.memo의 올바른 사용 방법
+ * object prop의 경우 useMemo를 써야 한다.
+ */
+const ReactMemoPropPage = () => {
   console.log('render page');
 
   const [renderedCount, setRenderedCount] = useState(0);
@@ -45,4 +49,4 @@ const Button = styled.button`
   font-weight: 700;
 `;
 
-export default UseMemoDependencyPage;
+export default ReactMemoPropPage;
