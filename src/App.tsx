@@ -20,6 +20,7 @@ import MobileViewportResizePage from './pages/MobileViewportResizePage';
 import SwiperPage from './pages/SwiperPage';
 import UseEffectDependencyPage from './pages/UseEffectDependencyPage';
 import ReactMemoPropPage from './pages/ReactMemoPropPage';
+import CustomMuiColorThemePage from './pages/CustomMuiColorTheme';
 
 function App() {
   return (
@@ -54,6 +55,9 @@ function App() {
           UseEffectDependencys
         </MainNavItem>
         <MainNavItem to="/react-memo-prop">ReactMemoProp</MainNavItem>
+        <MainNavItem to="/custom-mui-color-theme">
+          CustomMuiColorTheme
+        </MainNavItem>
       </MainNav>
       <Routes>
         <Route path="/portal" element={<PortalPage />} />
@@ -90,6 +94,10 @@ function App() {
           element={<UseEffectDependencyPage />}
         />
         <Route path="/react-memo-prop" element={<ReactMemoPropPage />} />
+        <Route
+          path="/custom-mui-color-theme"
+          element={<CustomMuiColorThemePage />}
+        />
         <Route path="*" element={<PortalPage />} />
       </Routes>
     </div>
