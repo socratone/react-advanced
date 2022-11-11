@@ -15,6 +15,9 @@ declare module '@mui/material/styles' {
   interface PaletteOptions {
     custom: PaletteOptions['primary'];
   }
+  interface TypeText {
+    teritary: string;
+  }
 }
 
 // https://stackoverflow.com/questions/46486565/mui-customize-button-color
@@ -38,7 +41,8 @@ const theme = createTheme({
     text: {
       primary: '#4c6bd1',
       secondary: '#91a5e6',
-      disabled: '#c9d3f4',
+      teritary: '#c5d1fa',
+      disabled: '#b1b1b1',
     },
   },
 });
@@ -67,8 +71,10 @@ const CustomMuiColorThemePage = () => {
 
         <Divider />
 
+        <Typography>default</Typography>
         <Typography color="text.primary">text.primary</Typography>
         <Typography color="text.secondary">text.secondary</Typography>
+        <Typography color="text.teritary">text.teritary</Typography>
         <Typography color="text.disabled">text.disabled</Typography>
 
         <Chip label="default chip color is text.primary" />
