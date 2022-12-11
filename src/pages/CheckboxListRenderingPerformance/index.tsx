@@ -60,7 +60,7 @@ const CheckboxListRenderingPerformancePage = () => {
           itemCount={checkboxList.length}
           itemSize={40} // item height
           width={400}
-          itemData={{ checkboxList, onChange: handleChange }} // custom props
+          itemData={{ items: checkboxList, onChange: handleChange }} // custom props
         >
           {Row}
         </List>
@@ -69,20 +69,22 @@ const CheckboxListRenderingPerformancePage = () => {
   );
 };
 
+// https://react-window.vercel.app/#/examples/list/memoized-list-items
 const Row: React.FC<
   ListChildComponentProps<{
-    checkboxList: Item[];
+    items: Item[];
     onChange: (id: string, checked: boolean) => void;
   }>
 > = ({ index, style, data }) => {
-  const item = data.checkboxList[index];
+  const { items, onChange } = data;
+  const item = items[index];
 
   return (
     <CheckboxListItem
       style={style}
       label={item.label}
       checked={item.checked}
-      onChange={(_, checked) => data.onChange(item.id, checked)}
+      onChange={(_, checked) => onChange(item.id, checked)}
     />
   );
 };
