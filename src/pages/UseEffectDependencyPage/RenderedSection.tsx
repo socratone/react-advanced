@@ -7,6 +7,9 @@ type RenderedSectionProps = {
   object: { key: string };
 };
 
+/**
+ * useEffect의 dependency 비교
+ */
 const RenderedSection = ({
   renderedCount,
   number,
