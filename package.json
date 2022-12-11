@@ -19,6 +19,7 @@
     "react-router-dom": "^6.0.1",
     "react-scripts": "^5.0.1",
     "react-transition-group": "^4.4.2",
+    "react-window": "^1.8.8",
     "styled-components": "^5.3.3",
     "swiper": "6.8.4",
     "swiper-react": "1.0.0",
@@ -50,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-window": "^1.8.5",
     "@types/styled-components": "^5.1.15"
   }
 }
