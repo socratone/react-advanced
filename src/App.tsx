@@ -21,6 +21,7 @@ import SwiperPage from './pages/SwiperPage';
 import UseEffectDependencyPage from './pages/UseEffectDependencyPage';
 import ReactMemoPropPage from './pages/ReactMemoPropPage';
 import CustomMuiColorThemePage from './pages/CustomMuiColorTheme';
+import CheckboxListRenderingPerformancePage from './pages/CheckboxListRenderingPerformance';
 
 function App() {
   return (
@@ -57,6 +58,9 @@ function App() {
         <MainNavItem to="/react-memo-prop">ReactMemoProp</MainNavItem>
         <MainNavItem to="/custom-mui-color-theme">
           CustomMuiColorTheme
+        </MainNavItem>
+        <MainNavItem to="/checkbox-list-rendering-performance">
+          CheckboxListRenderingPerformance
         </MainNavItem>
       </MainNav>
       <Routes>
@@ -97,6 +101,10 @@ function App() {
         <Route
           path="/custom-mui-color-theme"
           element={<CustomMuiColorThemePage />}
+        />
+        <Route
+          path="/checkbox-list-rendering-performance"
+          element={<CheckboxListRenderingPerformancePage />}
         />
         <Route path="*" element={<PortalPage />} />
       </Routes>
