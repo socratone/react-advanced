@@ -16,7 +16,7 @@ const SearchParamsPage = () => {
   useEffect(() => {
     setSearchParams(
       { keyword: debouncedValue ? debouncedValue : [] },
-      { replace: true } // true로 해야 뒤로 가기를 했을 때 앞으로 가기가 없어지지 않는다.
+      { replace: true } // true로 해야 뒤로 가기를 했을 때 앞으로 가기가 없어지는 등의 버그가 발생하지 않는다. 대신 params 각각의 변화는 history에 기록되지 않는다.
     );
   }, [debouncedValue, setSearchParams]);
 
