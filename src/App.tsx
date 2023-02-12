@@ -14,14 +14,14 @@ import SearchParamsPage from './pages/SearchParamsPage';
 import SubcomponentsPage from './pages/SubcomponentsPage';
 import ReactChildrenPage from './pages/ReactChildrenPage';
 import FunctionalProgrammingPage from './pages/FunctionalProgrammingPage';
-import ScrollAnimationPage from './pages/ScrollAnimation';
+import ScrollAnimationPage from './pages/ScrollAnimationPage';
 import ForceRemountPage from './pages/ForceRemountPage';
 import MobileViewportResizePage from './pages/MobileViewportResizePage';
 import SwiperPage from './pages/SwiperPage';
 import UseEffectDependencyPage from './pages/UseEffectDependencyPage';
 import ReactMemoPropPage from './pages/ReactMemoPropPage';
-import CustomMuiColorThemePage from './pages/CustomMuiColorTheme';
-import CheckboxListRenderingPerformancePage from './pages/CheckboxListRenderingPerformance';
+import CustomMuiColorThemePage from './pages/CustomMuiColorThemePage';
+import CheckboxListRenderingPerformancePage from './pages/CheckboxListRenderingPerformancePage';
 
 function App() {
   return (
