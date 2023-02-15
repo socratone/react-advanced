@@ -1,27 +1,28 @@
-import { Routes, Route } from 'react-router-dom';
-import PortalPage from './pages/PortalPage';
-import MainNav from './components/layout/MainNav';
-import MainNavItem from './components/layout/MainNavItem';
-import UseEffectAndDebouncingPage from './pages/UseEffectAndDebouncingPage';
-import StyledComponentsPage from './pages/StyledComponentsPage';
-import UseReducerPage from './pages/UseReducerPage';
-import UseContextPage from './pages/UseContextPage';
-import UseImperativeHandlePage from './pages/UseImperativeHandlePage';
-import TransitionPage from './pages/TransitionPage';
-import CSSTransitionPage from './pages/CSSTransitionPage';
-import TransitionGroupPage from './pages/TransitionGroupPage';
-import SearchParamsPage from './pages/SearchParamsPage';
-import SubcomponentsPage from './pages/SubcomponentsPage';
-import ReactChildrenPage from './pages/ReactChildrenPage';
-import FunctionalProgrammingPage from './pages/FunctionalProgrammingPage';
-import ScrollAnimationPage from './pages/ScrollAnimationPage';
-import ForceRemountPage from './pages/ForceRemountPage';
-import MobileViewportResizePage from './pages/MobileViewportResizePage';
-import SwiperPage from './pages/SwiperPage';
-import UseEffectDependencyPage from './pages/UseEffectDependencyPage';
-import ReactMemoPropPage from './pages/ReactMemoPropPage';
-import CustomMuiColorThemePage from './pages/CustomMuiColorThemePage';
-import CheckboxListRenderingPerformancePage from './pages/CheckboxListRenderingPerformancePage';
+import { Routes, Route } from "react-router-dom";
+import PortalPage from "./pages/PortalPage";
+import MainNav from "./components/layout/MainNav";
+import MainNavItem from "./components/layout/MainNavItem";
+import UseEffectAndDebouncingPage from "./pages/UseEffectAndDebouncingPage";
+import StyledComponentsPage from "./pages/StyledComponentsPage";
+import UseReducerPage from "./pages/UseReducerPage";
+import UseContextPage from "./pages/UseContextPage";
+import UseImperativeHandlePage from "./pages/UseImperativeHandlePage";
+import TransitionPage from "./pages/TransitionPage";
+import CSSTransitionPage from "./pages/CSSTransitionPage";
+import TransitionGroupPage from "./pages/TransitionGroupPage";
+import SearchParamsPage from "./pages/SearchParamsPage";
+import SubcomponentsPage from "./pages/SubcomponentsPage";
+import ReactChildrenPage from "./pages/ReactChildrenPage";
+import FunctionalProgrammingPage from "./pages/FunctionalProgrammingPage";
+import ScrollAnimationPage from "./pages/ScrollAnimationPage";
+import ForceRemountPage from "./pages/ForceRemountPage";
+import MobileViewportResizePage from "./pages/MobileViewportResizePage";
+import SwiperPage from "./pages/SwiperPage";
+import UseEffectDependencyPage from "./pages/UseEffectDependencyPage";
+import ReactMemoPropPage from "./pages/ReactMemoPropPage";
+import CustomMuiColorThemePage from "./pages/CustomMuiColorThemePage";
+import CheckboxListRenderingPerformancePage from "./pages/CheckboxListRenderingPerformancePage";
+import ReactSortableHocPage from "./pages/ReactSortableHocPage";
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
         <MainNavItem to="/checkbox-list-rendering-performance">
           CheckboxListRenderingPerformance
         </MainNavItem>
+        <MainNavItem to="/react-sortable-hoc">ReactSortableHoc</MainNavItem>
       </MainNav>
       <Routes>
         <Route path="/portal" element={<PortalPage />} />
@@ -106,6 +108,7 @@ function App() {
           path="/checkbox-list-rendering-performance"
           element={<CheckboxListRenderingPerformancePage />}
         />
+        <Route path="/react-sortable-hoc" element={<ReactSortableHocPage />} />
         <Route path="*" element={<PortalPage />} />
       </Routes>
     </div>
