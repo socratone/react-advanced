@@ -55,6 +55,7 @@ const ReactSortableHocPage = (): JSX.Element => {
         lockToContainerEdges={true}
         useDragHandle
         onSortEnd={onSortEnd}
+        helperClass="dragging"
       >
         {items.map((value: any, index: number) => (
           <DndItem key={index} index={index}>
@@ -86,6 +87,11 @@ const StyledItem = styled.div`
   border-radius: 16px;
   overflow: hidden;
   width: 300px;
+
+  // 드래그할 때 그림자를 나타낸다.
+  &.dragging {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
 `;
 
 const StyledTrigger = styled.div`
