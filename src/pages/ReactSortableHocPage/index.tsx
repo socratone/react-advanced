@@ -57,7 +57,7 @@ const ReactSortableHocPage = (): JSX.Element => {
         onSortEnd={onSortEnd}
       >
         {items.map((value: any, index: number) => (
-          <DndItem key={`item-${index}`} index={index}>
+          <DndItem key={index} index={index}>
             <DndTrigger>↕</DndTrigger>
             <StyledContent>{value}</StyledContent>
           </DndItem>
